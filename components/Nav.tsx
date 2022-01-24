@@ -8,9 +8,9 @@ function Nav() {
     const [showMenu, setShowMenu] = useState(false)
 
     return (
-        <header className="border-b border-gray-400 relative sm:sticky top-0 z-20 bg-white shadow-lg">
+        <header className=" relative sm:relative top-0 z-20 bg-transparent text-slate-100">
             <div className="flex items-center justify-evenly mx-auto max-w-7xl px-4 pb-2 pt-4 md:pt-6">
-                <div className="max-w-lg w-full">
+                <div className="max-w-lg w-1/2">
                     <Link href={"/"} passHref>
                         <a className="cursor-pointer">
                             <h1 className="flex no-underlinee">
@@ -21,9 +21,9 @@ function Nav() {
                                     className="h-10 w-10 mr-1 object-contain"
                                     src="/images/logos/fwm.png"
                                 />
-                                <span className="text-xl font-primary font-bold tracking-tight pt-1">
+                                {/* <span className="text-xl font-primary font-bold tracking-tight pt-1">
                                     Forever Wild Media
-                                </span>
+                                </span> */}
                             </h1>
                         </a>
                     </Link>
