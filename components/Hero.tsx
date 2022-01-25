@@ -13,7 +13,7 @@ function Hero() {
                 style={{ 'objectFit': 'cover' }}
             />
             <div className='absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50'>
-                <div className='h-full flex flex-col justify-center items-center text-slate-100'>
+                <div className='h-full flex flex-col justify-evenly items-center text-slate-100'>
 
                     <img
                         // height="450"
@@ -25,6 +25,10 @@ function Hero() {
                     <span className='text-3xl font-thin text-center'>
                         Engaging content for <span className='font-bold'>adventurous</span> minds. 
                     </span>
+                    {/* ADD BUTTON TO CONTACT FORM */}
+                    <div>
+                        <button className='bg-slate-200 bg-opacity-75 hover:bg-opacity-100 px-4 py-2 rounded-md text-black'>Contact Today</button>
+                    </div>
                 </div>
             </div>
         </div>

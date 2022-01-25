@@ -44,9 +44,9 @@ function Nav() {
 
                 ))}
                 {/* <!-- Mobile menu button --> */}
-                <div className="md:hidden flex items-center">
+                <div className="absolute right-10 md:hidden flex items-center">
                     <button className="outline-none" onClick={() => setShowMenu(!showMenu)}>
-                        <svg className="w-6 h-6 text-gray-500 hover:text-blue-300"
+                        <svg className="w-6 h-6 text-slate-100 hover:text-blue-300"
                             xlinkShow="!showMenu"
                             fill="none"
                             strokeLinecap="round"
@@ -63,7 +63,7 @@ function Nav() {
                 {/* <!-- mobile menu --> */}
             </div>
             {showMenu && (
-                <div className="md:hidden">
+                <div className=" absolute right-20 md:hidden">
                     <ul>
                         <li><a className="block text-sm px-2 py-4 text-black bg-blue-50 font-semibold hover:bg-orange-300 transition duration-300">Home</a></li>
                         <li><a className="block text-sm px-2 py-4 text-black bg-blue-50 font-semibold hover:bg-orange-300 transition duration-300">Home</a></li>
