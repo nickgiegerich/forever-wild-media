@@ -17,7 +17,7 @@ video {
   
   .embla__viewport {
     overflow: hidden;
-    width: 100%;
+    width: 50vw;
   }
   
   .embla__viewport.is-draggable {
