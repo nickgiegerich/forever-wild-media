@@ -10,14 +10,14 @@ video {
     position: relative;
     background-color: #f7f7f700;
     padding: 20px;
-    max-width: 670px;
+    /* max-width: 670px; */
     margin-left: auto;
     margin-right: auto;
   }
   
   .embla__viewport {
     overflow: hidden;
-    width: 50vw;
+    width: 80vw;
   }
   
   .embla__viewport.is-draggable {
@@ -40,14 +40,20 @@ video {
   
   .embla__slide {
     position: relative;
-    min-width: 25%;
+    min-width: 100%; /* increase as screen size gets smaller*/
     padding-left: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .embla__slide { 
+      min-width: 25%;
+    }
   }
   
   .embla__slide__inner {
     position: relative;
     overflow: hidden;
-    height: 190px;
+    height: 320px;
   }
   
   .embla__slide__img {
@@ -56,10 +62,12 @@ video {
     top: 50%;
     left: 50%;
     width: auto;
-    min-height: 100%;
-    min-width: 100%;
-    max-width: none;
+    /* min-height: 100%; */
+    min-height: auto;
+    min-width: auto;
+    /* max-width: ; */
     transform: translate(-50%, -50%);
+    object-fit: scale-down;
   }
   
   .embla__button {
