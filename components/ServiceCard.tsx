@@ -10,7 +10,7 @@ const ServiceCard = ({ imgSrc, title, description, tags }: Props) => {
 
         <div className={`flex flex-col shadow-lg mb-10 mx-auto rounded-md hover:shadow-2xl transition-all duration-200`}>
             <div>
-                <img className="h-80 w-auto rounded-md shadow-lg hover:-translate-y-3 hover:shadow-2xl transition-all duration-200 overflow-hidden" src={imgSrc} />
+                <img alt="service" className="h-80 w-auto rounded-md shadow-lg hover:-translate-y-3 hover:shadow-2xl transition-all duration-200 overflow-hidden" src={imgSrc} />
             </div>
             <div className="uppercase font-bold pt-10 text-2xl pl-2">
                 {title}

@@ -19,7 +19,7 @@ const TeamCard = ({ imgSrc, first, last, job, description }: Props) => {
 
         <div className={`relative flex flex-col shadow-lg object-cover mb-10 mx-auto rounded-md hover:shadow-2xl transition-all duration-200`}>
             <div className={`bg-cover rounded-md h-96 w-96`}>
-                <img className="absolute object-cover top-0 left-0 h-full w-full rounded-md z-0" src={imgSrc} />
+                <img alt="team" className="absolute object-cover top-0 left-0 h-full w-full rounded-md z-0" src={imgSrc} />
 
             </div>
             <div className="absolute top-0 left-0 h-full w-full transition-all z-20 rounded-md duration-200 hover:bg-white hover:bg-opacity-90">
