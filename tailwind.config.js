@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        nick: "url('https://www.foreverwild.media/wp-content/uploads/2020/11/IMG_1956-e1606363284958.jpg')",
+
       },
     },
   },

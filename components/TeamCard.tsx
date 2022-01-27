@@ -1,20 +1,28 @@
 interface Props {
     imgSrc: string;
-    name: string;
+    first: string;
+    last: string;
     job: string;
     description: string;
 }
 
-const TeamCard = () => {
+const TeamCard = ({ imgSrc, first, last, job, description }: Props) => {
     return (
 
-        <div className={`flex flex-col shadow-lg object-cover mb-10 mx-auto rounded-md hover:shadow-2xl transition-all duration-200`}>
-            <div className="bg-nick bg-cover flex-col justify-items-end justify-self-end items-end h-96 w-96">
-                {/* <img
-                    className="h-full w-full object-cover rounded-md shadow-lg hover:-translate-y-3 hover:shadow-2xl transition-all duration-200 overflow-hidden"
-                    src="https://www.foreverwild.media/wp-content/uploads/2020/11/IMG_1956-e1606363284958.jpg"
-                /> */}
-                <div className="h-full w-full">title</div>
+        <div className={`relative flex flex-col shadow-lg object-cover mb-10 mx-auto rounded-md hover:shadow-2xl transition-all duration-200`}>
+            <div className={`bg-black bg-cover rounded-md h-96 w-96`}>
+                <div className="h-full w-full flex flex-col justify-end items-end text-black pr-4">
+                    <span className="font-bold">{first} {last}</span>
+                    <span className="font-light">{job}</span>
+                </div>
+            </div>
+            <div className="absolute top-0 left-0 h-full w-full transition-all rounded-md duration-200 hover:bg-black hover:bg-opacity-90">
+                <div className="absolute flex flex-col justify-evenly items-center top-0 left-0 h-full w-full transition-all duration-200 text-transparent hover:text-white">
+                    <span className="text-xl">{first}</span>
+                    <span className="text-center h-ful w-full px-4">
+                        {description}
+                    </span>
+                </div>
             </div>
         </div>
     )
