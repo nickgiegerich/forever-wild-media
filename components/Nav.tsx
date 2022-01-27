@@ -38,7 +38,7 @@ function Nav() {
     }, [])
 
     return (
-        <header ref={node => {node = node}} className={`top-0 text-slate-100 transition-all duration-300 fixed w-full z-50 ${offset > 85 ? "scale-1 bg-white text-black shadow-2xl py-3" : "py-5"} ${showMenu ? "bg-white" : "bg-transparent"} `}>
+        <header ref={node => {node = node}} className={`top-0 text-slate-100 transition-all duration-300 fixed w-full z-50 ${offset > 85 ? "scale-1 bg-white text-black shadow-2xl py-3" : "py-5 "} ${showMenu ? 'bg-white': ''} `}>
             <div className="flex items-center justify-evenly mx-auto max-w-7xl px-4">
                 <div className="max-w-lg w-1/2">
                     <Link href={"/"} passHref>
