@@ -1,10 +1,24 @@
+import { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 
 function Hero() {
+    const [innerWidth, setInnerWidth] = useState<Number>()
+
+    useEffect(() => {
+        if (typeof window !== undefined) {
+            const updateWindowDimensions = () => {
+                const newWidth = window.innerWidth;
+                setInnerWidth(newWidth);
+            };
+            window.addEventListener('resize', updateWindowDimensions)
+
+            return () => window.removeEventListener('resize', updateWindowDimensions)
+        }
+    }, [])
     return (
         <div className='relative -mt-20 w-full h-1/2 object-contain'>
             <ReactPlayer
-                url={"https://www.foreverwild.media/wp-content/uploads/2020/11/Forever-Wild-Media-Reel-1.mp4"}
+                url={`${innerWidth < 600 ? 'https://foreverwild.media/wp-content/uploads/2020/11/Forever-Wild-Media-Reel-45.mp4' : 'https://www.foreverwild.media/wp-content/uploads/2020/11/Forever-Wild-Media-Reel-1.mp4'}`}
                 playing
                 loop
                 playsinline
@@ -24,7 +38,7 @@ function Hero() {
                         src="/images/logos/logo-2.png"
                     />
                     <span className='text-3xl font-thin text-center'>
-                        Engaging content for <span className='font-bold'>adventurous</span> minds. 
+                        Engaging content for <span className='font-bold'>adventurous</span> minds.
                     </span>
                     {/* ADD BUTTON TO CONTACT FORM */}
                     <div>
