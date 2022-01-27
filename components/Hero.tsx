@@ -7,6 +7,7 @@ function Hero() {
                 url={"https://www.foreverwild.media/wp-content/uploads/2020/11/Forever-Wild-Media-Reel-1.mp4"}
                 playing
                 loop
+                playsinline
                 muted
                 width="100vw"
                 height="100vh"
