@@ -1,20 +1,9 @@
 import { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 
-function Hero() {
-    const [innerWidth, setInnerWidth] = useState<Number>()
+function Hero({innerWidth}) {
 
-    useEffect(() => {
-        if (typeof window !== undefined) {
-            const updateWindowDimensions = () => {
-                const newWidth = window.innerWidth;
-                setInnerWidth(newWidth);
-            };
-            window.addEventListener('resize', updateWindowDimensions)
-
-            return () => window.removeEventListener('resize', updateWindowDimensions)
-        }
-    }, [])
+    
     return (
         <div className='relative -mt-20 w-full h-1/2 object-contain'>
             <ReactPlayer
