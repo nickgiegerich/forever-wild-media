@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 
-function Hero({innerWidth}) {
+function Hero({ innerWidth }) {
 
-    
+
     return (
-        <div className='relative -mt-20 w-full h-1/2 object-contain'>
+        <section id="Home" className='relative -mt-20 w-full h-1/2 object-contain'>
             <ReactPlayer
                 url={`${innerWidth < 600 ? 'https://foreverwild.media/wp-content/uploads/2020/11/Forever-Wild-Media-Reel-45.mp4' : 'https://www.foreverwild.media/wp-content/uploads/2020/11/Forever-Wild-Media-Reel-1.mp4'}`}
                 playing
@@ -31,11 +31,15 @@ function Hero({innerWidth}) {
                     </span>
                     {/* ADD BUTTON TO CONTACT FORM */}
                     <div>
-                        <button className='bg-slate-200 bg-opacity-75 hover:bg-opacity-100 px-4 py-2 rounded-md text-black'>Contact Today</button>
+                        <a href='/#Contact'>
+                            <button className='bg-slate-200 bg-opacity-75 hover:bg-opacity-100 px-4 py-2 rounded-md text-black'>
+                                Contact Today
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

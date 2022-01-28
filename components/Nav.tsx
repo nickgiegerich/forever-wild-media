@@ -1,7 +1,7 @@
 import { createRef, useEffect, useRef, useState } from "react";
 import Link from 'next/link';
 
-const LINKS = ["Home", "Services", "About", "Team", "Contact"];
+const LINKS = ["Home", "About", "Services", "Team", "Contact"];
 const logoImg = "/images/logos/fwm.png";
 
 function Nav() {
@@ -38,7 +38,7 @@ function Nav() {
     }, [])
 
     return (
-        <header ref={node => {node = node}} className={`top-0 text-slate-100 transition-all duration-300 fixed w-full z-50 ${offset > 85 ? "scale-1 bg-white text-black shadow-2xl py-3" : "py-5 "} ${showMenu ? 'bg-white': ''} `}>
+        <header ref={node => { node = node }} className={`top-0 text-slate-100 transition-all duration-300 fixed w-full z-50 ${offset > 85 ? "scale-1 bg-white text-black shadow-2xl py-3" : "py-5 "} ${showMenu ? 'bg-white' : ''} `}>
             <div className="flex items-center justify-evenly mx-auto max-w-7xl px-4">
                 <div className="max-w-lg w-1/2">
                     <Link href={"/"} passHref>
@@ -61,7 +61,7 @@ function Nav() {
 
                 {LINKS.map((lnk, idx) => (
                     <div key={idx} className="hidden md:flex max-w-xs w-1/2 text-center sm:text-right">
-                        <Link href={`/${lnk}`}>
+                        <Link href={`/#${lnk}`}>
                             <h1>
                                 <a className="cursor-pointer">
                                     <span className="text-xl font-semibold  pt-1 pb-2 transition-all duration-100 hover:border-b-2">
@@ -95,11 +95,16 @@ function Nav() {
             {showMenu && (
                 <div className="md:hidden transition-all duration-300 transform mt-4 bg-black">
                     <ul>
-                        <li><a className="block text-sm px-2 py-4 text-black bg-white font-semibold hover:bg-orange-300 transition duration-300">Home</a></li>
-                        <li><a className="block text-sm px-2 py-4 text-black bg-white font-semibold hover:bg-orange-300 transition duration-300">Services</a></li>
-                        <li><a className="block text-sm px-2 py-4 text-black bg-white font-semibold hover:bg-orange-300 transition duration-300">About</a></li>
-                        <li><a className="block text-sm px-2 py-4 text-black bg-white font-semibold hover:bg-orange-300 transition duration-300">Team</a></li>
-                        <li><a className="block text-sm px-2 py-4 text-black bg-white font-semibold hover:bg-orange-300 transition duration-300">Contact</a></li>
+                        {LINKS.map((lnk, idx) => (
+                            <li><a
+                                href={`/#${lnk}`}
+                                onClick={() => setShowMenu(false)}
+                                className="block text-sm px-2 py-4 text-black bg-white font-semibold hover:bg-orange-300 transition duration-300"
+                            >
+                                {lnk}
+                            </a>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             )}

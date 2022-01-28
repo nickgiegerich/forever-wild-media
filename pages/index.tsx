@@ -25,7 +25,7 @@ export default function Home() {
 
   }, [])
   return (
-    <div className="">
+    <div>
       <Hero innerWidth={innerWidth} />
       <Spacer />
       <About />

@@ -3,7 +3,7 @@ import TeamCard from "./TeamCard";
 function Team() {
 
     return (
-        <div className="flex flex-col justify-evenly items-center">
+        <div id="Team" className="flex flex-col justify-evenly items-center">
             <span className="text-4xl font-semibold uppercase py-10">our team</span>
             <div className="grid grid-cols-1 md:grid-cols-2 space-x-2">
                 <TeamCard imgSrc='https://www.foreverwild.media/wp-content/uploads/2021/04/Karlie-Haskins_1-scaled.jpg' first="Karlie" last="Haskins" job="Business Manger | Sales" description="Karlie received a Bachelor's degree from Penn State University, and after four years of constantly talking about Idaho, she moved home to contribute to the growth of a community she feels connected to. She worked as a cross-cultural dialogue facilitator for three years, and learned how to guide a conversation so people may think together about an idea. Through this experience, she recognized how a person’s community often influences their experience. This inspired her to pursue marketing, so she can work directly with business professionals to determine how they can effectively connect with their customers and communities." />

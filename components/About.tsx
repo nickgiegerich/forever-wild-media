@@ -7,7 +7,7 @@ const slides = Array.from(Array(SLIDE_COUNT).keys());
 function About() {
 
     return (
-        <div className="flex flex-col justify-evenly items-center">
+        <div id="About" className="flex flex-col justify-evenly items-center">
             <span className="text-4xl font-semibold uppercase">who we are</span>
             <span className="text-center text-2xl font-sans text-opacity-75 text-gray-600 max-w-xs md:max-w-6xl py-10 leading-relaxed">
                 We&apos;ve been helping brands develop and define their voice since 2016. The times may have changed, but our

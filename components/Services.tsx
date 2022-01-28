@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 function Services() {
 
     return (
-        <div className="flex flex-col justify-evenly items-center">
+        <section id="Services" className="flex flex-col justify-evenly items-center">
             <span className="text-4xl font-semibold uppercase">what we do</span>
             <span className="text-center text-2xl font-sans text-opacity-75 text-gray-600 max-w-md md:max-w-6xl py-10 leading-relaxed">
                 Driving Technology for Leading Brands
@@ -28,7 +28,7 @@ function Services() {
                     tags={["graphic design", "print design", "ux design", "social media", "digital communication"]}
                 />
             </div>
-        </div>
+        </section>
     )
 }
 
