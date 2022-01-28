@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
+import Link from 'next/link';
+
 
 function Hero({ innerWidth }) {
 
@@ -20,8 +21,6 @@ function Hero({ innerWidth }) {
                 <div className='h-full flex flex-col justify-evenly items-center text-slate-100'>
 
                     <img
-                        // height="450"
-                        // width="450"
                         alt="logo"
                         className="mr-1 object-contain"
                         src="/images/logos/logo-2.png"
@@ -31,11 +30,13 @@ function Hero({ innerWidth }) {
                     </span>
                     {/* ADD BUTTON TO CONTACT FORM */}
                     <div>
-                        <a href='/#Contact'>
-                            <button className='bg-slate-200 bg-opacity-75 hover:bg-opacity-100 px-4 py-2 rounded-md text-black'>
-                                Contact Today
-                            </button>
-                        </a>
+                        <Link href={'/#Contact'} passHref >
+                            <a>
+                                <button className='bg-slate-200 bg-opacity-75 hover:bg-opacity-100 px-4 py-2 rounded-md text-black'>
+                                    Contact Today
+                                </button>
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>

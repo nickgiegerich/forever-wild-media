@@ -96,7 +96,7 @@ function Nav() {
                 <div className="md:hidden transition-all duration-300 transform mt-4 bg-black">
                     <ul>
                         {LINKS.map((lnk, idx) => (
-                            <li><a
+                            <li key={idx}><a
                                 href={`/#${lnk}`}
                                 onClick={() => setShowMenu(false)}
                                 className="block text-sm px-2 py-4 text-black bg-white font-semibold hover:bg-orange-300 transition duration-300"
