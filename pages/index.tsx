@@ -5,6 +5,7 @@ import ImageBreak from '../components/ImageBreak'
 import Services from "../components/Services";
 import Team from "../components/Team";
 import { useEffect, useState } from "react";
+import Contact from "../components/Contact";
 const bgImage = "/images/home/bg-img.png";
 
 export default function Home() {
@@ -32,6 +33,8 @@ export default function Home() {
       <Services />
       <Spacer />
       <Team />
+      <Spacer/>
+      <Contact/>
     </div>
   );
 }
