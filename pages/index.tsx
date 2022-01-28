@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import Team from "../components/Team";
 import { useEffect, useState } from "react";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 const bgImage = "/images/home/bg-img.png";
 
 export default function Home() {
@@ -35,6 +36,8 @@ export default function Home() {
       <Team />
       <Spacer/>
       <Contact/>
+      <Spacer/>
+      <Footer/>
     </div>
   );
 }
