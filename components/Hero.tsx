@@ -8,7 +8,7 @@ function Hero({ innerWidth }) {
     return (
         <section id="Home" className='relative -mt-20 w-full h-1/2 object-contain'>
             <ReactPlayer
-                url={`${innerWidth < 600 ? 'https://foreverwild.media/wp-content/uploads/2020/11/Forever-Wild-Media-Reel-45.mp4' : 'https://fwm-media.s3.us-west-2.amazonaws.com/hero-bg-video.mp4'}`}
+                url={`${innerWidth < 600 ? 'https://fwm-media.s3.us-west-2.amazonaws.com/mobile-hero.mp4' : 'https://fwm-media.s3.us-west-2.amazonaws.com/hero-bg-video.mp4'}`}
                 playing
                 loop
                 playsinline

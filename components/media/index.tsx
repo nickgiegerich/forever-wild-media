@@ -1,16 +1,26 @@
 export const media = [
-    "https://www.foreverwild.media/wp-content/uploads/2020/12/standard-wide-academic-logo.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/New-Idaho-Tourism-Logo-Cropped.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/SITA-LogoWithURL-Black-copy.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/new-CropLogic-copy.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/new-southern-idaho.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/1024px-Amazon_Prime_Video_logo.svg-copy.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/new-Outdoor-Idaho-Magazine-copy.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/SVCA-copy.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/EpicRealty-copy.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/Gemstone-copy.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/FiveTen-copy.png",
-    "https://www.foreverwild.media/wp-content/uploads/2020/11/Access-Fund-copy.png"
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/aa-club.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/asana.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/crop-logic.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/csi.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/epic-realty.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/five-ten.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/gemstone.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/helena.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/kayak.jpeg",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/kokatat.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/koto.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/maverik.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/new-squirel.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/o-center.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/outdoor-idaho.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/prime.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/shred-readu.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/south-idaho-eco.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/south-idaho-tourism.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/svpn.png",
+    "https://fwm-media.s3.us-west-2.amazonaws.com/businesses/visit-south-idaho.png",
+
 ]
 
 export const mediaByIndex = (index: number) => media[index % media.length];

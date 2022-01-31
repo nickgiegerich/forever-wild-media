@@ -16,7 +16,7 @@ function About() {
                 kickstart your branding today.
             </span>
             <Spacer/>
-            <span className="text-gray-500 text-opacity-60 font-thin text-lg">Featured Clients</span>
+            <span className="text-gray-500 font-light text-lg">Featured Clients</span>
             <EmblaCarousel slides={slides} options={{loop: true}}/>
         </div>
     )

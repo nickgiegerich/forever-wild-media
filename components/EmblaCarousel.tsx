@@ -55,18 +55,6 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
                             </div>
                         </div>
                     ))}
-                    {/* <div className="embla__slide">Slide 1</div>
-                    <div className="embla__slide">Slide 2</div>
-                    <div className="embla__slide">Slide 3</div>
-                    <div className="embla__slide">Slide 11</div>
-                    <div className="embla__slide">Slide 21</div>
-                    <div className="embla__slide">Slide 31</div>
-                    <div className="embla__slide">Slide 12</div>
-                    <div className="embla__slide">Slide 22</div>
-                    <div className="embla__slide">Slide 32</div>
-                    <div className="embla__slide">Slide 13</div>
-                    <div className="embla__slide">Slide 23</div>
-                    <div className="embla__slide">Slide 33</div> */}
                 </div>
             </div>
             <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
