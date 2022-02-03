@@ -34,10 +34,10 @@ export default function Home() {
       <Services />
       <Spacer />
       <Team />
-      <Spacer/>
-      <Contact/>
-      <Spacer/>
-      <Footer/>
+      <Spacer />
+      <Contact />
+      <Spacer />
+      <Footer />
     </div>
   );
 }
