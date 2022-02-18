@@ -1,9 +1,41 @@
    <!-- public/sitemap.xml -->
    <xml version="1.0" encoding="UTF-8">
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <url>
-       <loc>http://www.example.com/foo</loc>
+   <url>
+       <loc>https://www.foreverwild.media</loc>
        <lastmod>2022-02-03</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>1.0</priority>
+     </url>
+     <url>
+       <loc>https://www.foreverwild.media/#Home</loc>
+       <lastmod>2022-02-03</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>1.0</priority>
+     </url>
+     <url>
+       <loc>https://www.foreverwild.media/#About</loc>
+       <lastmod>2022-02-03</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>1.0</priority>
+     </url>
+     <url>
+       <loc>https://www.foreverwild.media/#Services</loc>
+       <lastmod>2022-02-03</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>1.0</priority>
+     </url>
+     <url>
+       <loc>https://www.foreverwild.media/#Team</loc>
+       <lastmod>2022-02-03</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>1.0</priority>
+     </url>
+     <url>
+       <loc>https://www.foreverwild.media/#Contact</loc>
+       <lastmod>2022-02-03</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>1.0</priority>
      </url>
    </urlset>
    </xml>
